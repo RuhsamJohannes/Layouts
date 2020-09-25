@@ -1,0 +1,30 @@
+﻿<Window x:Class="Layouts.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Layouts"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="170" Width="400" MinHeight="140" MinWidth="400">
+
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="5,5,5,5"/>
+        </Style>
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="btnStackPanel" Content="StackPanel" Grid.Row="0"/>
+        <Button x:Name="btnDock" Content="Dock" Grid.Row="1"/>
+        <Button x:Name="btnGrid" Content="Grid" Grid.Row="2"/>
+        <Button x:Name="btnGridSplitter" Content="GridSplitter" Grid.Row="3"/>
+
+    </Grid>
+</Window>
